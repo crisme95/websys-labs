@@ -1,0 +1,102 @@
+/* -------------------------------- GROUP PORTFOLIO PAGE CSS -------------------------------- */
+/* website thumbnails */
+.thumbnail {
+    width: 15%;
+}
+
+.logo {
+    float: right;
+    width: 10%;
+}
+
+.team-pic {
+    width: 150px;
+}
+
+/* -------------------------------- ERIN'S RESUME PAGE CSS -------------------------------- */
+/* left column */
+/* container holds profile picture */
+.left {
+  /*background-color: red;*/
+  max-width: 13%;
+  float: left;
+  margin-right: 2%;
+}
+/* profile picture styling */
+.circle {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid black;
+  padding: 2%;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+/* right column */
+/* container holds contact information */
+address {
+  float: left;
+  width: 80%;
+}
+#erin-info { /* .vcard */
+  margin-top: 1%;
+  font-family: "Lora", Times, Georgia, serif;
+  font-weight: 400;
+}
+#name { 
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 300%;
+  font-style: normal;
+}
+
+/* clear floats after the columns */
+#erin-profile:after { /* header */
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* container holds resume */
+body { /* body */
+  margin: 1%;
+}
+.category { /* h2 */
+  display: flex;
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+}
+/* creates horizontal line next to word */
+.category:after { /* h2 */
+  content: "";
+  flex: 1 1;
+  border-bottom: 2px solid #000;
+  margin: auto;
+  margin-left: 10px;
+}
+.ins, .org{ /* h3 */
+  margin: auto;
+}
+.title { /* h4 */
+  display: inline;
+}
+time { 
+  font-size: 0.8em;
+}
+
+/* Amado's Profile Picture styling*/
+.amadopfp {
+  height: 300px;
+  width: 200px;
+}
+
+
+/* Lourdes's Profile Picture */
+.lourdespfp {
+    height: 200px;
+    width: 200px;
+}

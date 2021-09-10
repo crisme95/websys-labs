@@ -11,3 +11,6 @@ that it appears more professional. As well as learning how to do things better, 
 ideas with my teammates on how to improve my work as well as theirs. We all learned about the
 hCard format which was simpler than we thought to implement and was an easy to display our
 personal information.
+
+Our entire group portfolio and personal portfolios are in the group-portfolio directory within 
+this folder, everything that we submitted for lab 1.
