@@ -1,17 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-  <title>XHTML Template Example - Intro ITWS</title>
+  <title>Cristian's Portfolio</title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+  <link rel="stylesheet" href="assets/stylesheets/style.css" /> <!-- Link to our global CSS stylesheet -->
 </head>
 
 <body>
+  <!-- div blocks for future CSS formating -->
   <div>
-    <img src="mejiac-pfp.jpeg" alt="pfp" width="200px" />
+    <img class="team-pic" src="assets/imgs/mejiac-pfp.jpeg" alt="pfp"/>
   </div>
-
-  <div class="vcard" style="border: 1px dashed #aaa; padding: 3px 5px;"><span class="fn n">
+  <!-- hCard microformat -->
+  <div class="hCard" style="border: 1px dashed #aaa; padding: 3px 5px;"><span class="fn n">
       <span class="given-name">Cristian</span>
       <span class="additional-name">Javier</span>
       <span class="family-name">Mejia</span>
@@ -26,19 +29,22 @@
     <div class="tel">+12017746503</div>
   </div>
 
+  <!-- Paragraph div block for my introduction -->
   <div>
     <h2>Intro</h2>
     <p>My name is Cristian Javier Mejia and I am a Computer Science and Information Technology &amp; Web Science student
-      at
-      Rensselear Polytechnic Institute. I grew up in Paramus, NJ but
-      my parents are from the Dominican Republic. My father works with computers so I naturally gained an interest in
-      them and I'm excited to learn more about them while I'm in school.
-      I didn't have any really coding experience when coming to RPI and it was difficult at times but I've made friends
-      along the way and we faced the challenge together. I'm currently
-      taking some Computer Systems Engineering courses as well to explore the hardware side of computing as well.
+      at Rensselear Polytechnic Institute. I grew up in Paramus, NJ but my parents are from the Dominican Republic. My
+      father works with computers so I naturally gained an interest in them and I'm excited to learn more about them
+      while
+      I'm in school. I didn't have any really coding experience when coming to RPI and it was difficult at times but
+      I've
+      made friends along the way and we faced the challenge together. I'm currently taking some Computer Systems
+      Engineering
+      courses as well to explore the hardware side of computing as well.
     </p>
   </div>
 
+  <!-- Skills listed in an unordered list -->
   <div>
     <h2>Skills</h2>
     <ul>
@@ -53,6 +59,7 @@
     </ul>
   </div>
 
+  <!-- Work experience with organization as h3 and position as h4 with description as a paragraph -->
   <div>
     <h2>Work Experience</h2>
 
@@ -84,7 +91,7 @@
       Independently managed and carried out scheduled deliveries.
     </p>
   </div>
-
+  <!-- School name as h4, major as h5, and accomplishments, awards, and relevant coursework as h6 followed by unordered list -->
   <div>
     <h2>Education</h2>
 
