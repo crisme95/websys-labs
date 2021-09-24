@@ -1,0 +1,90 @@
+/* creates old-paper like background */
+body {
+    background-image: url(https://wallpapertag.com/wallpaper/full/9/5/3/136940-vintage-paper-background-2362x1575-for-4k.jpg);
+    background-color: #E3C58C;
+    background-blend-mode: overlay;
+    
+}
+
+/* fancy title fonts, Italianno is the main font and the subsequent are fallbacks in case the browser doesn't support Italianno */
+h1 {
+    font-family: 'Italianno', 'Apple Chancery', 'Snell Roundhand', cursive;
+    font-size: 50px;
+}
+
+/* creates the drop-down navigation bar/menu */
+.nav_bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0,0,0,0.4);
+    float: left;
+    position: fixed;
+}
+
+.nav_bar_a {
+    list-style-type: none;
+    margin: 0 0 0 100.25px;
+    padding: 0;
+    background-color: rgba(0,0,0,0.4);
+    float: left;
+    position: fixed;
+}
+
+.nav_bar_align {
+    float: left;
+}
+
+.nav_bar_text {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.nav_bar_text:hover {
+    background-color: rgba(0,0,0,0.3);
+}
+
+.nav_dropdown {
+    position: relative;   
+}
+
+.nav_button {
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+    padding: 15px;
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Italianno', cursive;
+}
+
+.nav_drop_content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0,0,0,0.7);;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 10px;
+    font-family: 'Italianno', cursive;
+    font-size: 25px;
+}
+
+.nav_dropdown:hover .nav_drop_content {
+    display: block;
+}
+
+img {
+    /* float: right; */
+    width: 200px;
+    height: 220px;
+}
+
+/* imported Google font for better readability*/
+#constitution p{
+    font-family: 'Merriweather', serif;
+}
