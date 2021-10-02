@@ -2,20 +2,22 @@
 <html lang="en">
 
 <head>
-  <title>Information Technology and Web Science | Contact</title>
+  <title>Information Technology and Web Science | Science at Rensselaer</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/style.css" />
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
 
-  <div class="container-fluid p-5 bg-primary text-white text-center">
-    <a class="no-text-dec-normal" href="index.html">
+  <!-- Banner at top of page which links back to the home page -->
+  <div class="container-fluid p-5 bg-primary text-white text-center"
+    style="background: transparent url('assets/faculty-pics/background-img.png')">
+    <a class="no-text-dec-normal-background" href="index.html">
       <h1>Information Technology and Web Science</h1>
     </a>
-    <p>Resize this responsive page to see the effect!</p>
   </div>
 
   <!-- Navigation bar w/ links to programs, faculty, news, and contact pages -->
@@ -32,7 +34,7 @@
           <a class="nav-link" href="faculty.html">Faculty</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">News</a>
+          <a class="nav-link" href="news.html">News</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="contact.html">Contact</a>
@@ -42,7 +44,7 @@
   </nav>
 
   <!-- Contact info form which when validated sends email -->
-  <div class="container">
+  <div class="container mt-5">
     <form action="/action_page.php">
       <div class="form-group">
         <label for="name">Name:</label>
@@ -61,6 +63,7 @@
         <textarea type="message" class="form-control" rows="3"></textarea>
         <small id="messageHelp" class="form-text text-muted">Provide a message to be delivered to our faculty.</small>
       </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
     </form>
   </div>
 

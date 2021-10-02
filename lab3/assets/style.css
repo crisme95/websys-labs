@@ -1,3 +1,14 @@
 .no-text-dec-normal {
     text-decoration: none;
+    color: black;
+}
+.no-text-dec-normal-background {
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+    -webkit-text-stroke: 2px black;
+}
+
+.img-thumbnail {
+    width: 200px;
 }
