@@ -3,14 +3,11 @@ Cristian Mejia   RIN: 661993623
 The first optimization that I made was that I combined all the individual CSS rules for
 "fg" class objects into one CSS rule inside the style tag. They were explicitly setting
 the width and height for each object which increasing the processing needed to size those
-objects. The next optimization I made was 
-
-
-
-
-
-
-
+objects. The second optimization I made was putting repeated lines of JavaScript code into
+a function. This removed many duplicate calls to the document and therefore speeding up
+the processing. I also added the defer tag to my script tag so that the JavaScript is
+loaded last. My third optimization was moving the style and script code into their
+respective files. This improves the readability and the maintainablity of the code.
 
 
 Free Bee web client
