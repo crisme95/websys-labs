@@ -1,3 +1,18 @@
+Cristian Mejia   RIN: 661993623
+
+The first optimization that I made was that I combined all the individual CSS rules for
+"fg" class objects into one CSS rule inside the style tag. They were explicitly setting
+the width and height for each object which increasing the processing needed to size those
+objects. The next optimization I made was 
+
+
+
+
+
+
+
+
+
 Free Bee web client
 ===================
 This is the JavaScript-based web client for Free Bee.
