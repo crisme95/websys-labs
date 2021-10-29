@@ -342,6 +342,15 @@ function found_word() {
   return 0;
 }
 
+function clearFound() {
+  while (foundlist.length > 0) {
+    foundlist.pop();
+  }
+  found = 0;
+  document.getElementById("points-update").innerHTML = 0;
+  document.getElementById("answers-update").innerHTML = foundlist.join("<br />");
+}
+
 function check() {
   var center = 0, i;
 
