@@ -19,6 +19,7 @@ function darkmode() {
     for (var i = 0; i < x.length; i++) {
       if (x[i].className != "fg" && x[i].className != "bg") {
         x[i].style.background = "#fbfcff";
+        x[i].style.color = "#243b4a";
       }
     }
     dark = 0;
@@ -28,6 +29,7 @@ function darkmode() {
     for (var i = 0; i < x.length; i++) {
       if (x[i].className != "fg" && x[i].className != "bg") {
         x[i].style.background = "#111111";
+        x[i].style.color = "white";
       }
     }
     dark = 1;
@@ -52,13 +54,6 @@ function type(letter, combno) {
   var idNames = ["no-message", "pangram", "already-found", "center-letter", "too-short", "not-in-list"];
   var displayTypes = ["inline", "none", "none", "none", "none", "none"];
   setDisplay(idNames, displayTypes);
-  //document.getElementById("no-message").style.display = "inline";
-  //document.getElementById("pangram").style.display = "none";
-  //document.getElementById("already-found").style.display = "none";
-  //document.getElementById("center-letter").style.display = "none";
-  //document.getElementById("too-short").style.display = "none";
-  //document.getElementById("not-in-list").style.display = "none";
-  // setStyle("comb" + combno, "80px", "80px", parseInt(document.getElementById("comb" + combno).style.left) + 10 + "px", parseInt(document.getElementById("comb" + combno).style.top) + 10 + "px");
   document.getElementById("comb" + combno).style.height = "80px";
   document.getElementById("comb" + combno).style.width = "80px";
   document.getElementById("comb" + combno).style.left = parseInt(document.getElementById("comb" + combno).style.left) + 10 + "px";
@@ -74,34 +69,6 @@ function untype() {
   setStyle("comb5", "100px", "100px", "80px", "199px");
   setStyle("comb6", "100px", "100px", "159px", "149px");
   setStyle("comb7", "100px", "100px", "80px", "100px");
-  // document.getElementById("comb1").style.height = "100px";
-  // document.getElementById("comb1").style.width = "100px";
-  // document.getElementById("comb1").style.left = "1px";
-  // document.getElementById("comb1").style.top = "51px";
-  // document.getElementById("comb2").style.height = "100px";
-  // document.getElementById("comb2").style.width = "100px";
-  // document.getElementById("comb2").style.left = "80px";
-  // document.getElementById("comb2").style.top = "1px";
-  // document.getElementById("comb3").style.height = "100px";
-  // document.getElementById("comb3").style.width = "100px";
-  // document.getElementById("comb3").style.left = "159px";
-  // document.getElementById("comb3").style.top = "51px";
-  // document.getElementById("comb4").style.height = "100px";
-  // document.getElementById("comb4").style.width = "100px";
-  // document.getElementById("comb4").style.left = "1px";
-  // document.getElementById("comb4").style.top = "149px";
-  // document.getElementById("comb5").style.height = "100px";
-  // document.getElementById("comb5").style.width = "100px";
-  // document.getElementById("comb5").style.left = "80px";
-  // document.getElementById("comb5").style.top = "199px";
-  // document.getElementById("comb6").style.height = "100px";
-  // document.getElementById("comb6").style.width = "100px";
-  // document.getElementById("comb6").style.left = "159px";
-  // document.getElementById("comb6").style.top = "149px";
-  // document.getElementById("comb7").style.height = "100px";
-  // document.getElementById("comb7").style.width = "100px";
-  // document.getElementById("comb7").style.left = "80px";
-  // document.getElementById("comb7").style.top = "100px";
 }
 
 function setPlay(idName, letterno, combno, sizeLeft, sizeTop, displayType, dT) {
@@ -112,7 +79,7 @@ function setPlay(idName, letterno, combno, sizeLeft, sizeTop, displayType, dT) {
     document.getElementById(idName).ontouchstart = function () { dT = 1; type(letters[letterno], combno) };
     document.getElementById(idName).onmousedown = function () { if (dT != 1) { type(letters[letterno], combno) } };
   }
-  document.getElementById(idName).src = letters[letterno] + ".png";
+  document.getElementById(idName).src = letters[letterno] + "-min.png";
   document.getElementById(idName).style.left = sizeLeft;
   document.getElementById(idName).style.top = sizeTop;
   document.getElementById(idName).style.display = displayType;
@@ -126,88 +93,12 @@ function display() {
   var didtouch = 0;
 
   setPlay("play1", 0, 1, "21px", "51px", "block", didtouch);
-  // document.getElementById("play1").src = letters[0] + ".png";
-  // document.getElementById("play1").style.left = "21px";
-  // document.getElementById("play1").style.top = "51px";
-  // document.getElementById("play1").ontouchstart = function () { didtouch = 1; type(letters[0], 1) };
-  // document.getElementById("play1").onmousedown = function () { if (didtouch != 1) { type(letters[0], 1) } };
-  // document.getElementById("play1").style.display = "block";
-  // document.getElementById("play1").onmouseup = function () { untype() };
-  // document.getElementById("play1").ondragend = function () { untype() };
-  // document.getElementById("play1").ontouchend = function () { untype() };
-  // document.getElementById("play1").ontouchcancel = function () { untype() };
-
   setPlay("play2", 1, 2, "100px", "1px", "block", didtouch);
-  // document.getElementById("play2").src = letters[1] + ".png";
-  // document.getElementById("play2").style.left = "100px";
-  // document.getElementById("play2").style.top = "1px";
-  // document.getElementById("play2").ontouchstart = function () { didtouch = 1; type(letters[1], 2) };
-  // document.getElementById("play2").onmousedown = function () { if (didtouch != 1) { type(letters[1], 2) } };
-  // document.getElementById("play2").style.display = "block";
-  // document.getElementById("play2").onmouseup = function () { untype() };
-  // document.getElementById("play2").ondragend = function () { untype() };
-  // document.getElementById("play2").ontouchend = function () { untype() };
-  // document.getElementById("play2").ontouchcancel = function () { untype() };
-
   setPlay("play3", 2, 3, "179px", "51px", "block", didtouch);
-  // document.getElementById("play3").src = letters[2] + ".png";
-  // document.getElementById("play3").style.left = "179px";
-  // document.getElementById("play3").style.top = "51px";
-  // document.getElementById("play3").ontouchstart = function () { didtouch = 1; type(letters[2], 3) };
-  // document.getElementById("play3").onmousedown = function () { if (didtouch != 1) { type(letters[2], 3) } };
-  // document.getElementById("play3").style.display = "block";
-  // document.getElementById("play3").onmouseup = function () { untype() };
-  // document.getElementById("play3").ondragend = function () { untype() };
-  // document.getElementById("play3").ontouchend = function () { untype() };
-  // document.getElementById("play3").ontouchcancel = function () { untype() };
-
   setPlay("play4", 3, 4, "21px", "149px", "block", didtouch);
-  // document.getElementById("play4").src = letters[3] + ".png";
-  // document.getElementById("play4").style.left = "21px";
-  // document.getElementById("play4").style.top = "149px";
-  // document.getElementById("play4").ontouchstart = function () { didtouch = 1; type(letters[3], 4) };
-  // document.getElementById("play4").onmousedown = function () { if (didtouch != 1) { type(letters[3], 4) } };
-  // document.getElementById("play4").style.display = "block";
-  // document.getElementById("play4").onmouseup = function () { untype() };
-  // document.getElementById("play4").ondragend = function () { untype() };
-  // document.getElementById("play4").ontouchend = function () { untype() };
-  // document.getElementById("play4").ontouchcancel = function () { untype() };
-
   setPlay("play5", 4, 5, "100px", "199px", "block", didtouch);
-  // document.getElementById("play5").src = letters[4] + ".png";
-  // document.getElementById("play5").style.left = "100px";
-  // document.getElementById("play5").style.top = "199px";
-  // document.getElementById("play5").ontouchstart = function () { didtouch = 1; type(letters[4], 5) };
-  // document.getElementById("play5").onmousedown = function () { if (didtouch != 1) { type(letters[4], 5) } };
-  // document.getElementById("play5").style.display = "block";
-  // document.getElementById("play5").onmouseup = function () { untype() };
-  // document.getElementById("play5").ondragend = function () { untype() };
-  // document.getElementById("play5").ontouchend = function () { untype() };
-  // document.getElementById("play5").ontouchcancel = function () { untype() };
-
   setPlay("play6", 5, 6, "179px", "149px", "block", didtouch);
-  // document.getElementById("play6").src = letters[5] + ".png";
-  // document.getElementById("play6").style.left = "179px";
-  // document.getElementById("play6").style.top = "149px";
-  // document.getElementById("play6").ontouchstart = function () { didtouch = 1; type(letters[5], 6) };
-  // document.getElementById("play6").onmousedown = function () { if (didtouch != 1) { type(letters[5], 6) } };
-  // document.getElementById("play6").style.display = "block";
-  // document.getElementById("play6").onmouseup = function () { untype() };
-  // document.getElementById("play6").ondragend = function () { untype() };
-  // document.getElementById("play6").ontouchend = function () { untype() };
-  // document.getElementById("play6").ontouchcancel = function () { untype() };
-
   setPlay("play7", 6, 7, "100px", "100px", "block", didtouch);
-  // document.getElementById("play7").src = letters[6] + ".png";
-  // document.getElementById("play7").style.left = "100px";
-  // document.getElementById("play7").style.top = "100px";
-  // document.getElementById("play7").ontouchstart = function () { didtouch = 1; type(letters[6][1], 7) };
-  // document.getElementById("play7").onmousedown = function () { if (didtouch != 1) { type(letters[6][1], 7) } };
-  // document.getElementById("play7").style.display = "block";
-  // document.getElementById("play7").onmouseup = function () { untype() };
-  // document.getElementById("play7").ondragend = function () { untype() };
-  // document.getElementById("play7").ontouchend = function () { untype() };
-  // document.getElementById("play7").ontouchcancel = function () { untype() };
 }
 
 function update_rank() {
@@ -342,28 +233,12 @@ function found_word() {
   return 0;
 }
 
-function clearFound() {
-  while (foundlist.length > 0) {
-    foundlist.pop();
-  }
-  found = 0;
-  document.getElementById("points-update").innerHTML = 0;
-  document.getElementById("answers-update").innerHTML = foundlist.join("<br />");
-}
-
 function check() {
   var center = 0, i;
 
   var idNames = ["no-message", "pangram", "already-found", "center-letter", "too-short", "not-in-list"];
   var displayTypes = ["inline", "none", "none", "none", "none", "none"];
   setDisplay(idNames, displayTypes);
-
-  // document.getElementById("no-message").style.display = "inline";
-  // document.getElementById("pangram").style.display = "none";
-  // document.getElementById("already-found").style.display = "none";
-  // document.getElementById("center-letter").style.display = "none";
-  // document.getElementById("too-short").style.display = "none";
-  // document.getElementById("not-in-list").style.display = "none";
 
   if (replaying === 0) {
     guess = document.getElementById("guess").value.toLowerCase();
@@ -431,13 +306,6 @@ function replay_words() {
       var displayTypes = ["inline", "none", "none", "none", "none", "none"];
       setDisplay(idNames, displayTypes);
 
-      // document.getElementById("no-message").style.display = "inline";
-      // document.getElementById("pangram").style.display = "none";
-      // document.getElementById("already-found").style.display = "none";
-      // document.getElementById("center-letter").style.display = "none";
-      // document.getElementById("too-short").style.display = "none";
-      // document.getElementById("not-in-list").style.display = "none";
-
       replaying = 0;
 
       return;
@@ -447,13 +315,6 @@ function replay_words() {
   var idNames = ["no-message", "pangram", "already-found", "center-letter", "too-short", "not-in-list"];
   var displayTypes = ["inline", "none", "none", "none", "none", "none"];
   setDisplay(idNames, displayTypes);
-
-  // document.getElementById("no-message").style.display = "inline";
-  // document.getElementById("pangram").style.display = "none";
-  // document.getElementById("already-found").style.display = "none";
-  // document.getElementById("center-letter").style.display = "none";
-  // document.getElementById("too-short").style.display = "none";
-  // document.getElementById("not-in-list").style.display = "none";
 
   replaying = 0;
 }
@@ -483,31 +344,11 @@ function daily() {
   win = 0;
 
   updateStats(points, foundlist, rank, "Yesterday's answers", "");
-  // document.getElementById("points-update").innerHTML = points;
-  // document.getElementById("answers-update").innerHTML = foundlist.join("<br />");
-  // document.getElementById("rank-update").innerHTML = rank;
-  // document.getElementById("yesterday-or-random").innerHTML = "Yesterday's answers";
-  // document.getElementById("update-random").innerHTML = "";
   document.getElementById("restart-daily-button").style.visibility = "hidden";
 
   var idNames = ["random-answers", "no-message", "pangram", "already-found", "center-letter", "too-short", "not-in-list", "play1", "play2", "play3", "play4", "play5", "play6", "play7"];
   var displayTypes = ["none", "inline", "none", "none", "none", "none", "none", "none", "none", "none", "none", "none", "none", "none"];
   setDisplay(idNames, displayTypes);
-
-  // document.getElementById("random-answers").style.display = "none";
-  // document.getElementById("no-message").style.display = "inline";
-  // document.getElementById("pangram").style.display = "none";
-  // document.getElementById("already-found").style.display = "none";
-  // document.getElementById("center-letter").style.display = "none";
-  // document.getElementById("too-short").style.display = "none";
-  // document.getElementById("not-in-list").style.display = "none";
-  // document.getElementById("play1").style.display = "none";
-  // document.getElementById("play2").style.display = "none";
-  // document.getElementById("play3").style.display = "none";
-  // document.getElementById("play4").style.display = "none";
-  // document.getElementById("play5").style.display = "none";
-  // document.getElementById("play6").style.display = "none";
-  // document.getElementById("play7").style.display = "none";
 
   letters[0] = todayletters[0];
   letters[1] = todayletters[1];
@@ -573,34 +414,6 @@ window.onload = function () {
   setStyle("comb5", "100px", "100px", "80px", "199px");
   setStyle("comb6", "100px", "100px", "159px", "149px");
   setStyle("comb7", "100px", "100px", "80px", "100px");
-  // document.getElementById("comb1").style.height = "100px";
-  // document.getElementById("comb1").style.width = "100px";
-  // document.getElementById("comb1").style.left = "1px";
-  // document.getElementById("comb1").style.top = "51px";
-  // document.getElementById("comb2").style.height = "100px";
-  // document.getElementById("comb2").style.width = "100px";
-  // document.getElementById("comb2").style.left = "80px";
-  // document.getElementById("comb2").style.top = "1px";
-  // document.getElementById("comb3").style.height = "100px";
-  // document.getElementById("comb3").style.width = "100px";
-  // document.getElementById("comb3").style.left = "159px";
-  // document.getElementById("comb3").style.top = "51px";
-  // document.getElementById("comb4").style.height = "100px";
-  // document.getElementById("comb4").style.width = "100px";
-  // document.getElementById("comb4").style.left = "1px";
-  // document.getElementById("comb4").style.top = "149px";
-  // document.getElementById("comb5").style.height = "100px";
-  // document.getElementById("comb5").style.width = "100px";
-  // document.getElementById("comb5").style.left = "80px";
-  // document.getElementById("comb5").style.top = "199px";
-  // document.getElementById("comb6").style.height = "100px";
-  // document.getElementById("comb6").style.width = "100px";
-  // document.getElementById("comb6").style.left = "159px";
-  // document.getElementById("comb6").style.top = "149px";
-  // document.getElementById("comb7").style.height = "100px";
-  // document.getElementById("comb7").style.width = "100px";
-  // document.getElementById("comb7").style.left = "80px";
-  // document.getElementById("comb7").style.top = "100px";
   get_yesterday();
   get_today();
   if (localStorage.hasOwnProperty("useDarkMode") === true) {
@@ -641,29 +454,10 @@ function random() {
   win = 0;
 
   updateStats(points, foundlist, rank, "Answers", "");
-  // document.getElementById("points-update").innerHTML = points;
-  // document.getElementById("answers-update").innerHTML = foundlist.join("<br />");
-  // document.getElementById("rank-update").innerHTML = rank;
-  // document.getElementById("yesterday-or-random").innerHTML = "Answers";
-  // document.getElementById("update-random").innerHTML = "";
 
   var idNames = ["no-message", "pangram", "already-found", "center-letter", "too-short", "not-in-list", "play1", "play2", "play3", "play4", "play5", "play6", "play7"];
   var displayTypes = ["inline", "none", "none", "none", "none", "none", "none", "none", "none", "none", "none", "none", "none"];
   setDisplay(idNames, displayTypes);
-
-  // document.getElementById("no-message").style.display = "inline";
-  // document.getElementById("pangram").style.display = "none";
-  // document.getElementById("already-found").style.display = "none";
-  // document.getElementById("center-letter").style.display = "none";
-  // document.getElementById("too-short").style.display = "none";
-  // document.getElementById("not-in-list").style.display = "none";
-  // document.getElementById("play1").style.display = "none";
-  // document.getElementById("play2").style.display = "none";
-  // document.getElementById("play3").style.display = "none";
-  // document.getElementById("play4").style.display = "none";
-  // document.getElementById("play5").style.display = "none";
-  // document.getElementById("play6").style.display = "none";
-  // document.getElementById("play7").style.display = "none";
 
   xhttp.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
