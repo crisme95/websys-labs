@@ -33,7 +33,8 @@ due to the smaller file size.
 
 My final optimization was that I fixed the issue of the empty header tag in the index.html
 file. It now references the a tag with the id top and clicking on the Free Bee logo brings
-the user back to the top of the page.
+the user back to the top of the page. This removes the possiblity of unexpected browser
+behavior.
 
 On top of the optimzation improvements, I added some visual improvements as well. For the
 darkmode setting, I fixed the text color as it was hard to read against the dark background.
