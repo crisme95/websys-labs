@@ -11,7 +11,8 @@ due to there being less lines to read. This ultimately speeds up the website.
 
 My third optimization was moving the style and script code into their
 respective files. This improves the readability and the maintainablity of the code. I also 
-added the defer tag to my script tag so that the JavaScript is loaded last. 
+added the defer tag to my script tag so that the JavaScript is loaded last.
+
 My fourth optimization was that I compressed all the image files used on the page. This 
 leads to faster loading times.
 
