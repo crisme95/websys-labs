@@ -401,7 +401,7 @@ try {
 </head>
 
 <body>
-
+<h1>Cristian's PHP Calculator</h1>
 
   <form method="post" action="index.php">
     <table class="calculator">

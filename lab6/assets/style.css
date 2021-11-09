@@ -4,6 +4,11 @@ table {
   table-layout: fixed;
 }
 
+h1 {
+  font-family: 'Roboto Mono', monospace;
+  text-align: center;
+}
+
 .calculator {
   
   padding: 10px;
@@ -44,6 +49,7 @@ table {
 }
 
 #result {
+  text-align: center;
   font-family: 'Roboto Mono', monospace;
   color: azure;
 }
