@@ -4,13 +4,32 @@ For this lab, I did all the the commands in the SQL window
 on phpMyAdmin. I first created the database and the two tables
 for part 1 of the lab. I had difficulty setting the charset/collate
 but that was due to there being an extra underscore between utf8 and
-mb4 in utf8_mb4_general_ci which is really utf8mb4_general_ci. In part 2,
-I used the ALTER TABLE commands to add the extra columns to the students
-and courses tables. When creating the grades table, I had to look up how
+mb4 in utf8_mb4_general_ci which is really utf8mb4_general_ci. 
+
+In part 2, I used the ALTER TABLE commands to add the extra columns to the 
+students and courses tables. When creating the grades table, I had to look up how
 foreign keys are properly implemented and videos explaining how they are
 used. When inserting the courses, I used a random number generator for the
 CRNs and kept running into an issue of having a duplicate primary key. After
-researching about the error, 
+researching about the error, I found that the 11 digit numbers that I've been
+inputing were going over the highest number allowed, I fixed this issue by
+using the actual 5 digit size of CRNs which I didn't know what CRNs were.
+When inputing the students, I ran into the issue where the phone numbers
+were larger than the max allowed integer. To fix this, I modified the phone
+column to take BIGINT instead of INT. When ordering the students, I had the
+orders set by RIN, lastname, RCSID, and firstname by using the ORDER BY
+parameter. For showing the students who had grades above 90, I selected the
+RINs, names, and address of the students and the grades in the grade table.
+I then linked the RINs of the students table and the grades table. I then used
+a WHERE statement which would only output students who met the grade requirements.
+For counting the number of students enrolled in each course, I used COUNT which
+would count the amount of grades that had the same CRNs, meaning that a student was
+in the class. I then stored the result into a variable and joined the crns of courses
+and grades tables.
+
+In part 3, to test the mySQL statements, I created buttons that would post. My 
+PHP code would then check with isset() and run the following code. I had buttons
+for the students, showing the above 90 grades, and the students enrolled in each course.
 
 
 Part 1:
@@ -88,5 +107,7 @@ VALUES
 SELECT * from students ORDER BY RIN, Lastname, RCSID, Firstname;
 
 SELECT students.RIN, students.firstname, students.lastname, students.address, grades.grade FROM students INNER JOIN grades ON students.RIN = grades.RIN WHERE grade > 90;
+
+SELECT courses.*, COUNT(grades.crn) as students_enrolled FROM courses LEFT JOIN grades ON courses.crn = grades.crn GROUP BY courses.crn
 
 
