@@ -9,7 +9,8 @@ I used the ALTER TABLE commands to add the extra columns to the students
 and courses tables. When creating the grades table, I had to look up how
 foreign keys are properly implemented and videos explaining how they are
 used. When inserting the courses, I used a random number generator for the
-CRNs and kept running into an issue of 
+CRNs and kept running into an issue of having a duplicate primary key. After
+researching about the error, 
 
 
 Part 1:
