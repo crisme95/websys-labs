@@ -30,6 +30,18 @@ and grades tables.
 In part 3, to test the mySQL statements, I created buttons that would post. My 
 PHP code would then check with isset() and run the following code. I had buttons
 for the students, showing the above 90 grades, and the students enrolled in each course.
+I then added forms so that users would be able to add students, courses, and grades into
+the database. For students, I made fields that would enter into each field in the students
+table. I added maxlength constraints so that the submission wouldn't run into issues where
+the data was larger than the max size. It also keeps the data consistent with all the other
+entries in the table. For the courses and the grades fields, they follow the came format
+and constraints as students. When clicking the buttons which implement the code from
+part 2, they are outputted below the form into a table for ease of viewing. The table
+is outputted with printf() statements. I then added CSS to the form where I changed the
+background color as well as add a background shadow. For the entire page, I implemented
+a Google Font inmported into the style.css file. I then created tabs using JavaScript where
+clicking on the tabs shows each form. This works by setting the display from none to block once
+the button is clicked. All the forms are hidden on page load.
 
 
 Part 1:
@@ -104,10 +116,16 @@ VALUES
     ('48792', '473724539', '80'), 
     ('59495', '814917980', '92');
 
-SELECT * from students ORDER BY RIN, Lastname, RCSID, Firstname;
+SELECT * from students ORDER BY RIN, lastname, RCSID, firstname;
 
 SELECT students.RIN, students.firstname, students.lastname, students.address, grades.grade FROM students INNER JOIN grades ON students.RIN = grades.RIN WHERE grade > 90;
 
-SELECT courses.*, COUNT(grades.crn) as students_enrolled FROM courses LEFT JOIN grades ON courses.crn = grades.crn GROUP BY courses.crn
+SELECT courses.*, COUNT(grades.crn) as students_enrolled FROM courses LEFT JOIN grades ON courses.crn = grades.crn GROUP BY courses.crn;
 
+SELECT courses.*, AVG(grades.grade) as avg_grades FROM courses LEFT JOIN grades ON courses.crn = grades.crn GROUP BY courses.crn;
+
+Part 3:
+
+Dumped databases in a .sql file as well as a .txt file, I used the .sql file because for some reason phpMyAdmin did not 
+importing a database with the .txt file
 
