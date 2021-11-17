@@ -1,0 +1,17 @@
+.button {
+	font-family: "Roboto Mono", monospace;
+	background-color: azure;
+	color: black;
+	border: solid black 0.5px;
+	width: 80px;
+	border-radius: 5px;
+	height: 70%;
+	outline: none;
+}
+
+.button:active {
+	background: #e5e5e5;
+	-webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+	-moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+	box-shadow: inset 0px 0px 5px #c1c1c1;
+}
