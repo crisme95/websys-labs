@@ -1,0 +1,143 @@
+{
+	"Websys_course": {
+		"lectures": {
+			"lecture1": {
+				"title": "The Basics WebSys F21, 2021-09-03",
+				"description": "Learn the basics of Web Systems Development at RPI.",
+				"link": "https://docs.google.com/presentation/d/1gvCq-nWWM4ggARP6liG94KJZeRBpaNoRm9CkmxbzWT0/edit?usp=sharing"
+			},
+			"lecture2": {
+				"title": "Apache WebSys F21, 2021-09-10",
+				"description": "Learn how to install XAMPP and use the program.",
+				"link": "https://docs.google.com/presentation/d/1yqESGRC_v59VDIAUw1u3IsKPFFrqjrxQdD04I6cw6W0/edit?usp=sharing"
+			},
+			"lecture3": {
+				"title": "git learn lecture",
+				"description": "Learn how to use Git and its most prominent features.",
+				"link": "https://docs.google.com/presentation/d/1ha7ZyL1FMxKoo43iFNoMByP00z7l9nTH7UMWcmH-4Tg/edit?usp=sharing"
+			},
+			"lecture4": {
+				"title": "HTML5 addendum aka it's not 2017 anymore",
+				"description": "Learn about the HTML5 format and the improvements it features.",
+				"link": "https://docs.google.com/presentation/d/1Mib4YI837526U_VMoOE6M9tBFY2DxWO6581VZuYzrEo/edit?usp=sharing"
+			},
+			"lecture5": {
+				"title": "Cascading Style Sheets (CSS)",
+				"description": "Learn about CSS syntax, formating, and its properties.",
+				"link": "https://docs.google.com/presentation/d/1usbhG9skLKmKpiMtA7udt36f2mzbscXT/edit?usp=sharing&amp;ouid=101431771635793895949&amp;rtpof=true&amp;sd=true"
+			},
+			"lecture6": {
+				"title": "Make your own CSS grid, 2021-09-21",
+				"description": "Experiment with using CSS to create a grid to organize information.",
+				"link": "https://docs.google.com/presentation/d/1Q5Ppt1l1BWllExUzAcfU7c03kAFmlT02-KKSouGZw7I/edit?usp=sharing"
+			},
+			"lecture7": {
+				"title": "Advanced CSS workshop, 2021-09-24",
+				"description": "Experiment with using more advanced CSS to manipulate objects on a webpage.",
+				"link": "https://docs.google.com/presentation/d/1Vp_-_fqCBtwhlgT3HhqMbXx-7Piv7OPiQvblxyznPZE/edit?usp=sharing"
+			},
+			"lecture8": {
+				"title": "JavaScript: It's a thing, 2021-09-28",
+				"description": "Learn about the JavaScript programming language.",
+				"link": "https://docs.google.com/presentation/d/108yq32gLsn9Dn6_pjdpku9YagWjpaDuVY86BHfCB1KM/edit?usp=sharing"
+			},
+			"lecture9": {
+				"title": "AJAX &amp; JSON",
+				"description": "Learn about AJAX and JSON how they can be used together.",
+				"link": "https://docs.google.com/presentation/d/1CuKTZPsaJQs1DRgKbKHlObP_rTXv0HtAhm_wLFpEYfM/edit?usp=sharing"
+			},
+			"lecture10": {
+				"title": "jQuery, 2021-10-05",
+				"description": "Learn about jQuery and see how it streamlines using JavaScript.",
+				"link": "https://docs.google.com/presentation/d/1TOpBmwdZF1cUNfzcZ8t2DT237vvm5yFnqqi9mUzNBYw/edit?usp=sharing"
+			},
+			"lecture11": {
+				"title": "Front End Optimization",
+				"description": "Learn about the different front end optimizations used in the industry and how to implement them.",
+				"link": "https://docs.google.com/presentation/d/1xnWSdl3QlAJhhYZJB-L9qulDC2VGb67Ye5jGF5A0NTk/edit?usp=sharing"
+			},
+			"lecture12": {
+				"title": "Quiz 1 Review, 2021-10-12",
+				"description": "Review on the topics and structure of Quiz 1.",
+				"link": "https://docs.google.com/presentation/d/13kknZgEpW_QjE2O4ssyhtZUi8tsLU4YU-rsSnkmhFlk/edit?usp=sharing"
+			},
+			"lecture13": {
+				"title": "PHP",
+				"description": "Learn about PHP and how to program with it.",
+				"link": "https://docs.google.com/presentation/d/1FQrs6bCzF6lyfCXYm--leU81zl9uMwLz/edit?usp=sharing&amp;ouid=101431771635793895949&amp;rtpof=true&amp;sd=true"
+			},
+			"lecture14": {
+				"title": "More PHP: Interfaces, Abstract classes, and Polymorphism",
+				"description": "Learn about interfaces, abstract class, and polymorphism within PHP.",
+				"link": "https://docs.google.com/presentation/d/1l-idKFz6MG4l057y9kiz_aSMUcEIwJRnZvi88UBUB98/edit?usp=sharing"
+			},
+			"lecture15": {
+				"title": "MySQL WebSys 1",
+				"description": "Learn the basics of MySQL databases and how they're commonly used.",
+				"link": "https://docs.google.com/presentation/d/1b9FUdOQxXLWUB_tNlShdqN695tt8nwMh/edit?usp=sharing&amp;ouid=101431771635793895949&amp;rtpof=true&amp;sd=true"
+			},
+			"lecture16": {
+				"title": "PHP and MySQL Sessions &amp; Persistence",
+				"description": "Learn how PHP and MySQL can interact with eachtoerh and about PHP sessions and persistence.",
+				"link": "https://docs.google.com/presentation/d/1hdchGQdRVq_vmLc4Ot1TbyDADWahZ15f/edit?usp=sharing&amp;ouid=101431771635793895949&amp;rtpof=true&amp;sd=true"
+			},
+			"lecture17": {
+				"title": "Authentication &amp; Authorization WebSys 1",
+				"description": "Learn about the differences of authentication and authorization.",
+				"link": "https://docs.google.com/presentation/d/1IVV09GiwEho8KN4j3XFa9oVdIkz1t9LW/edit?usp=sharing&amp;ouid=101431771635793895949&amp;rtpof=true&amp;sd=true"
+			},
+			"lecture18": {
+				"title": "Quiz 2 Review",
+				"description": "Review on the topics and structure of Quiz 2.",
+				"link": "https://docs.google.com/presentation/d/1i7WQnXzdwIccKC86zU3DmP_thmMgRpa7U2O-XjEEK88/edit?usp=sharing"
+			},
+			"lecture19": {
+				"title": "Looking ahead to Web Science and short wrap-up",
+				"description": "Learn about what Web Science is about for next semester and what we've accomplished this semester.",
+				"link": "https://docs.google.com/presentation/d/191RL2L3t-JnjuOWvBfzYBJYbFP2TuAu4Fj6OOmB4A1E/edit?usp=sharing"
+			}
+		},
+		"labs": {
+			"lab1": {
+				"title": "Lab 1",
+				"description": "This lab will have you create a portfolio website for your group, which will include a portfolio site/page for each individual member of the group within.",
+				"link": "https://docs.google.com/document/d/1gfBFgyWVZ4HrudNXn4h_TCicEtdywLBdQxfIEZl-U98/edit?usp=sharing"
+			},
+			"lab2": {
+				"title": "Lab 2",
+				"description": "There’s a law that says all schools with Federal funding need to have some sort of programming about the Constitution on 9/17. Each group will make their own interactive Constitution web app/site.",
+				"link": "https://docs.google.com/document/d/1oOEMKBc2Dq6C69Y_pkXRipkVYB5-b-UskvswnTOiNV0/edit?usp=sharing"
+			},
+			"lab3": {
+				"title": "Lab 3",
+				"description": "Have you seen the ITWS web page? It’s not very good… https://science.rpi.edu/itws/. Your job this week (as individuals, this is not a group lab) is to make us a new site.",
+				"link": "https://docs.google.com/document/d/1TAqC_JIZ70o3bf87aCTPtFJxXB4k-VSQzesWzNDsMJI/edit?usp=sharing"
+			},
+			"lab4": {
+				"title": "Lab 4",
+				"description": "You have gotten your very first commission to create a website for a real client! The client is Gamma Nu Eta, the ITWS Honors Society. They have an immediate need for a new website, and they’ve agreed to let you make it!",
+				"link": "https://docs.google.com/document/d/1VBy44Ts1Zly14JJPiFk1LeQnqEVVVHxbZQJzgRjrVfo/edit?usp=sharing"
+			},
+			"lab5": {
+				"title": "Lab 5",
+				"description": "We are going to optimize a game I made called Free Bee game as found at https://freebee.fun/play/. It is a clone of the New York Times game Spelling Bee. You can find the source code for the game here: https://github.com/freebee-game/web-client.",
+				"link": "https://docs.google.com/document/d/19fi99OeR6RFPDIMtio7xAyk7EkbvWlhiQzxi5LrS8hs/edit?usp=sharing"
+			},
+			"lab6": {
+				"title": "Lab 6",
+				"description": "This is a calculator I used to own when I was in junior high school: https://www.cbpbook.com/wp-content/uploads/2015/02/casio-scientific-calculator-fx-100ms-original.jpg. Your (individual) lab is to recreate this calculator. You already have the basics (hopefully!) and you don’t have to recreate all the buttons from the calculator image.",
+				"link": "https://docs.google.com/document/d/1Aur3WmROp_lYT6UIIs1HjlZrc450VoORUXVzrXajZ8c/edit?usp=sharing"
+			},
+			"lab7": {
+				"title": "Lab 7",
+				"description": "Create an interactive web page (using HTML/CSS/JS/PHP) that allows the user to do all the steps in part 2 through a web interface. Basically, make me a grade book for class :)",
+				"link": "https://docs.google.com/document/d/1ILpyD9LtNgXQ_g8-9bNV9DOgjZkL25Nup69x2wX0dHg/edit?usp=sharing"
+			},
+			"lab8": {
+				"title": "Lab 8",
+				"description": "Create a JSON document containing information about the lectures and labs you've encountered in the Web Sys course this semester. Then design a front end to browse the contents of the JSON file. Finally, develop a back end to the site with PHP.",
+				"link": "https://docs.google.com/document/d/1SIF9NwMwpI3HgYLhjoM0kAUpI5Pwp2-QefjjfE3FxBo/edit?usp=sharing"
+			}
+		}
+	}
+}
