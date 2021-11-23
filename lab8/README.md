@@ -22,3 +22,16 @@ where I would have to constantly clean reload the page until I found out that so
 of my functions weren't in score of the document.ready function. After several hours,
 I was able to have the links dynamically loaded as well as the information of the
 JSON object when clicked to dynamically load into the output field.
+
+For part 3, I first created a database to hold the users as well as the archived
+data that the logged in user would choose. To create the login/logout features, I
+imported the code used in class and then changed all the mysqli code to use PDO
+instead. I got stuck for a little bit because I thought that some things would
+just work like the query but I had to give it the parameter PDO::FETCH_ALL_ASSOC
+for it to work properly. I then created some PHP code that would take the data
+input in the archive form into the database. It was mostly modeled by what I did
+in lab 7. I'm currently running into an issue where the form keeps submitting on
+refresh so I wanted to find a solution for that but it kept breaking the login in
+function. As for the rest, I began playing with the Boostrap properties and began
+stylizing the website. I gave my site a clean asthetic and added some animations
+to the pages.
