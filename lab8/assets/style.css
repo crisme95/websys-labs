@@ -2,12 +2,14 @@
 
 body {
 	font-family: "Oswald", sans-serif;
+  animation: fadein 1s
 }
 
 #loginForm {
 	margin: 20px;
 	background-color: blue;
 	padding: 20px;
+  animation: fadein 1s;
 }
 
 #loginbtn {
@@ -72,4 +74,12 @@ h4 {
 
 #arcSubmit {
   color: white;
+}
+
+
+
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }

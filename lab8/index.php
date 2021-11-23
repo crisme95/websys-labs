@@ -74,7 +74,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['username'])) {
       <div class="row">
         <div class="col">
           <h2 id="formHeader">Want to archive a post?</h2>
-          <form action="index.php" method="POST">
+          <form id="arcForm" action="index.php" method="POST">
             <input class="form-control" type="text" name="title">
             <div id="formText" class="form-text">Copy title here</div><br>
             <input class="form-control" type="text" name="description">

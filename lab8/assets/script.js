@@ -74,4 +74,12 @@ function loadJSON() {
 $(document).ready(function () {
 	loadJSON();
 	console.log("The initial load has been completed.");
+
+	$("#arcSubmit").click(function (event) {
+		event.preventDefault();
+		$('body').fadeOut("1s", function () {
+			//Once button has faded, invoke the form submission
+			$("#arcForm").submit();
+		});
+	});
 });
