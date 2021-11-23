@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&family=Roboto+Mono&display=swap');
+
+body {
+	font-family: "Oswald", sans-serif;
+}
+
+#loginForm {
+	margin: 20px;
+	background-color: blue;
+	padding: 20px;
+}
+
+#loginbtn {
+	color: white;
+}
+
+#formText {
+  color: white;
+}
+
+.navHeader {
+	margin-left: 10px;
+}
+
+.banner {
+	background-color: blue;
+	border-radius: 25px;
+	text-align: center;
+	margin: 10px;
+	padding: 10px;
+	color: white;
+}
+
+.container {
+	background-color: blue;
+	padding: 20px;
+	border-radius: 25px;
+}
+
+.bg-light {
+	background-color: white !important;
+	border-radius: 25px;
+	padding-left: 10px;
+}
+
+.greeting {
+	color: white;
+}
+
+#displayContent {
+	padding-left: 10px;
+	background-color: white;
+	border-radius: 25px;
+	padding: 10px;
+	margin-right: 10px;
+}
+
+#logoutbtn {
+	float: right;
+	background-color: blue !important;
+}
+
+h4 {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+#formHeader {
+  color: white;
+}
+
+#arcSubmit {
+  color: white;
+}
