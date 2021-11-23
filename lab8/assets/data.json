@@ -99,42 +99,42 @@
 		},
 		"labs": {
 			"lab1": {
-				"title": "Lab 1",
+				"title": "Group Portfolio",
 				"description": "This lab will have you create a portfolio website for your group, which will include a portfolio site/page for each individual member of the group within.",
 				"link": "https://docs.google.com/document/d/1gfBFgyWVZ4HrudNXn4h_TCicEtdywLBdQxfIEZl-U98/edit?usp=sharing"
 			},
 			"lab2": {
-				"title": "Lab 2",
+				"title": "Constitution Web App",
 				"description": "There’s a law that says all schools with Federal funding need to have some sort of programming about the Constitution on 9/17. Each group will make their own interactive Constitution web app/site.",
 				"link": "https://docs.google.com/document/d/1oOEMKBc2Dq6C69Y_pkXRipkVYB5-b-UskvswnTOiNV0/edit?usp=sharing"
 			},
 			"lab3": {
-				"title": "Lab 3",
+				"title": "ITWS Program Page",
 				"description": "Have you seen the ITWS web page? It’s not very good… https://science.rpi.edu/itws/. Your job this week (as individuals, this is not a group lab) is to make us a new site.",
 				"link": "https://docs.google.com/document/d/1TAqC_JIZ70o3bf87aCTPtFJxXB4k-VSQzesWzNDsMJI/edit?usp=sharing"
 			},
 			"lab4": {
-				"title": "Lab 4",
+				"title": "GNH Website",
 				"description": "You have gotten your very first commission to create a website for a real client! The client is Gamma Nu Eta, the ITWS Honors Society. They have an immediate need for a new website, and they’ve agreed to let you make it!",
 				"link": "https://docs.google.com/document/d/1VBy44Ts1Zly14JJPiFk1LeQnqEVVVHxbZQJzgRjrVfo/edit?usp=sharing"
 			},
 			"lab5": {
-				"title": "Lab 5",
+				"title": "Optimizations",
 				"description": "We are going to optimize a game I made called Free Bee game as found at https://freebee.fun/play/. It is a clone of the New York Times game Spelling Bee. You can find the source code for the game here: https://github.com/freebee-game/web-client.",
 				"link": "https://docs.google.com/document/d/19fi99OeR6RFPDIMtio7xAyk7EkbvWlhiQzxi5LrS8hs/edit?usp=sharing"
 			},
 			"lab6": {
-				"title": "Lab 6",
+				"title": "PHP Calculator",
 				"description": "This is a calculator I used to own when I was in junior high school: https://www.cbpbook.com/wp-content/uploads/2015/02/casio-scientific-calculator-fx-100ms-original.jpg. Your (individual) lab is to recreate this calculator. You already have the basics (hopefully!) and you don’t have to recreate all the buttons from the calculator image.",
 				"link": "https://docs.google.com/document/d/1Aur3WmROp_lYT6UIIs1HjlZrc450VoORUXVzrXajZ8c/edit?usp=sharing"
 			},
 			"lab7": {
-				"title": "Lab 7",
+				"title": "MySQL Databases",
 				"description": "Create an interactive web page (using HTML/CSS/JS/PHP) that allows the user to do all the steps in part 2 through a web interface. Basically, make me a grade book for class :)",
 				"link": "https://docs.google.com/document/d/1ILpyD9LtNgXQ_g8-9bNV9DOgjZkL25Nup69x2wX0dHg/edit?usp=sharing"
 			},
 			"lab8": {
-				"title": "Lab 8",
+				"title": "Websys Course Page",
 				"description": "Create a JSON document containing information about the lectures and labs you've encountered in the Web Sys course this semester. Then design a front end to browse the contents of the JSON file. Finally, develop a back end to the site with PHP.",
 				"link": "https://docs.google.com/document/d/1SIF9NwMwpI3HgYLhjoM0kAUpI5Pwp2-QefjjfE3FxBo/edit?usp=sharing"
 			}

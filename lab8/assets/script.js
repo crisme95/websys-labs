@@ -1,7 +1,7 @@
 // var output = document.getElementById("testing");
 // output.innerHTML = "fddd";
 
-$(document).ready(function () {
+function loadJSON() {
 	$.getJSON("assets/data.json", function (data) {
 		var lectureData = data.Websys_course.lectures;
 		var labData = data.Websys_course.labs;
@@ -9,9 +9,10 @@ $(document).ready(function () {
 		var labCount = 1;
 
 		// create nav links of all lecture objects from JSON file
+		$("#lecturesNav").empty();
 		for (let x in lectureData) {
 			$("#lecturesNav").append(
-				'<li class="nav-item"><a class="nav-link lectures" href="#displayContent" id="' +
+				'<li><a class="dropdown-item lectures" href="#displayContent" id="' +
 					x +
 					'">Lecture ' +
 					lectureCount +
@@ -23,7 +24,7 @@ $(document).ready(function () {
 		// create nav lnks of all lab objects from JSON file
 		for (let x in labData) {
 			$("#labsNav").append(
-				'<li class="nav-item"><a class="nav-link labs" href="#displayContent" id="' +
+				'<li><a class="dropdown-item labs" href="#displayContent" id="' +
 					x +
 					'">Lab ' +
 					labCount +
@@ -66,4 +67,11 @@ $(document).ready(function () {
 			});
 		});
 	});
+
+	console.log("The JSON file has been loaded.");
+}
+
+$(document).ready(function () {
+	loadJSON();
+	console.log("The initial load has been completed.");
 });
