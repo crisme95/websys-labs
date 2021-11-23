@@ -1,0 +1,35 @@
+===Database websyslab8
+
+== Table structure for table archive
+
+|------
+|Column|Type|Null|Default
+|------
+|//**id**//|int(11)|No|
+|RCSID|varchar(10)|No|
+|title|varchar(100)|No|
+|descrip|varchar(500)|No|
+|link|varchar(500)|No|
+== Dumping data for table archive
+
+|1|$RCSID|$title|$description|$link
+|3|mejiac|The Basics WebSys F21, 2021-09-03|Learn the basics of Web Systems Development at RPI.|https://docs.google.com/presentation/d/1gvCq-nWWM4ggARP6liG94KJZeRBpaNoRm9CkmxbzWT0/edit?usp=sharing
+|4|mejiac|The Basics WebSys F21, 2021-09-03|Learn the basics of Web Systems Development at RPI.|https://docs.google.com/presentation/d/1gvCq-nWWM4ggARP6liG94KJZeRBpaNoRm9CkmxbzWT0/edit?usp=sharing
+|5|mejiac|The Basics WebSys F21, 2021-09-03|Learn the basics of Web Systems Development at RPI.|https://docs.google.com/presentation/d/1gvCq-nWWM4ggARP6liG94KJZeRBpaNoRm9CkmxbzWT0/edit?usp=sharing
+|6|mejiac|The Basics WebSys F21, 2021-09-03|Learn the basics of Web Systems Development at RPI.|https://docs.google.com/presentation/d/1gvCq-nWWM4ggARP6liG94KJZeRBpaNoRm9CkmxbzWT0/edit?usp=sharing
+|7|mejiac|The Basics WebSys F21, 2021-09-03|Learn the basics of Web Systems Development at RPI.|https://docs.google.com/presentation/d/1gvCq-nWWM4ggARP6liG94KJZeRBpaNoRm9CkmxbzWT0/edit?usp=sharing
+|8|mejiac|Optimizations|We are going to optimize a game I made called Free Bee game as found at https://freebee.fun/play/. It is a clone of the New York Times game Spelling Bee. You can find the source code for the game here: https://github.com/freebee-game/web-client.|https://docs.google.com/document/d/19fi99OeR6RFPDIMtio7xAyk7EkbvWlhiQzxi5LrS8hs/edit?usp=sharing
+|9|mejiac|Optimizations|We are going to optimize a game I made called Free Bee game as found at https://freebee.fun/play/. It is a clone of the New York Times game Spelling Bee. You can find the source code for the game here: https://github.com/freebee-game/web-client.|https://docs.google.com/document/d/19fi99OeR6RFPDIMtio7xAyk7EkbvWlhiQzxi5LrS8hs/edit?usp=sharing
+|10|mejiac|Optimizations|We are going to optimize a game I made called Free Bee game as found at https://freebee.fun/play/. It is a clone of the New York Times game Spelling Bee. You can find the source code for the game here: https://github.com/freebee-game/web-client.|https://docs.google.com/document/d/19fi99OeR6RFPDIMtio7xAyk7EkbvWlhiQzxi5LrS8hs/edit?usp=sharing
+== Table structure for table users
+
+|------
+|Column|Type|Null|Default
+|------
+|//**id**//|int(11)|No|
+|username|varchar(100)|No|
+|password|varchar(100)|No|
+|RCSID|varchar(10)|No|
+== Dumping data for table users
+
+|1|crisme95|password|mejiac
