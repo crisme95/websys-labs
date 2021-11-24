@@ -1,0 +1,31 @@
+===Database websys_quiz
+
+== Table structure for table discounts
+
+|------
+|Column|Type|Null|Default
+|------
+|//**id**//|int(11)|No|
+|item_id|int(11)|Yes|NULL
+|discount|decimal(3,2)|Yes|NULL
+== Dumping data for table discounts
+
+|1|1|0.25
+|2|2|0.50
+|3|3|0.75
+|4|5|0.10
+== Table structure for table items
+
+|------
+|Column|Type|Null|Default
+|------
+|//**id**//|int(11)|No|
+|item_name|varchar(255)|Yes|NULL
+|price|decimal(6,2)|Yes|NULL
+== Dumping data for table items
+
+|1|MacBook Pro|2499.00
+|2|OpenBSD Tshirt|20.00
+|3|Amazon Echo|99.99
+|4|Nvidia GTX 3080|1999.99
+|5|AMD Ryzen 9 3900X|549.99
